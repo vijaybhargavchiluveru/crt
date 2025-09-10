@@ -1,0 +1,379 @@
+star patterns
+
+1.
+n = int(input())
+for i in range(n):
+for j in range(n):
+print('*')
+
+2.
+
+n = int(input())
+for i in range(n):
+for j in range(n):
+if(i==0 or i ==(n-1) or j ==0 or j ==(n-1):
+print('*')
+
+3.
+n = int(input())
+for i in range(n):
+for j in range(n):
+if(i==1 or i==n or j==1 or j==n or i==j or j==(n - i + 1)):
+print('*')
+else:
+print(' ')
+
+4.
+n=int(input())
+k = 4
+for i in range(n):
+print(' '*k)
+for j in range(n):
+print('*');
+k-=1
+
+5.
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n-1 or j == 0 or j == n-1 or i == j:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+print()
+
+6.
+n=int(input())
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        print("*", end="")
+    print()
+for i in range(n-2, -1, -1):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        print("*", end="")
+    print()
+print()
+
+7.
+n=int(input())
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        if k == 0 or k == 2*i or i == 0:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+for i in range(n-2, -1, -1):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        if k == 0 or k == 2*i or i == 0:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+8.
+n=int(input())
+for i in range(n):
+    for j in range(i):
+        print(" ", end="")
+    for k in range(2*(n-i)-1):
+        print("*", end="")
+    print()
+for i in range(n-2, -1, -1):
+    for j in range(i):
+        print(" ", end="")
+    for k in range(2*(n-i)-1):
+        print("*", end="")
+    print()
+print()
+
+9.
+n=int(input())
+for i in range(n):
+    for j in range(i):
+        print(" ", end="")
+    for k in range(2*(n-i)-1):
+        if k == 0 or k == 2*(n-i)-2 or i == 0:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+for i in range(n-2, -1, -1):
+    for j in range(i):
+        print(" ", end="")
+    for k in range(2*(n-i)-1):
+        if k == 0 or k == 2*(n-i)-2 or i == 0:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+10.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(i):
+        print("*", end="")
+    print()
+print()
+
+11.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(i):
+        if j == 0 or j == i-1 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+12.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+print()
+
+13.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        if k == 0 or k == i-1 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+14.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
+print()
+
+15.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(i):
+        if j == 0 or j == i-1 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+16.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+print()
+
+17.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        if k == 0 or k == i-1 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+18.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        print("*", end="")
+    print()
+print()
+
+19.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        if k == 0 or k == 2*i-2 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+20.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        print("*", end="")
+    print()
+print()
+
+21.
+n=int(input())
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        if k == 0 or k == 2*i-2 or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+22.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(i):
+        print("*", end="")
+    print()
+for i in range(n-1, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
+print()
+
+23.
+n=int(input())
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+for i in range(n-1, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+print()
+
+24.
+n=int(input())
+for i in range(1, n//2+2):
+    for j in range(n//2+1-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        print("*", end="")
+    print()
+for i in range(n//2, 0, -1):
+    for j in range(n//2+1-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        print("*", end="")
+    print()
+print()
+
+25.
+n=int(input())
+for i in range(1, n//2+2):
+    for j in range(n//2+1-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        if i == 3 and k >= 4 and k <= 12:
+            if k == 4:
+                print("C", end="")
+            elif k == 5:
+                print("o", end="")
+            elif k == 6:
+                print("d", end="")
+            elif k == 7:
+                print("e", end="")
+            elif k == 8:
+                print("F", end="")
+            elif k == 9:
+                print("o", end="")
+            elif k == 10:
+                print("r", end="")
+            elif k == 11:
+                print("w", end="")
+            elif k == 12:
+                print("i", end="")
+            else:
+                print("*", end="")
+        else:
+            print("*", end="")
+    print()
+for i in range(n//2, 0, -1):
+    for j in range(n//2+1-i):
+        print(" ", end="")
+    for k in range(2*i-1):
+        print("*", end="")
+    print()
+print()
+
+26.
+n=int(input())
+for i in range(1, n):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for k in range(i):
+        print("*", end="")
+    print()
+print()
+
+27.
+n=int(input())
+mid = n // 2
+for i in range(n):
+    for j in range(n):
+        if i == mid or j == mid:
+            print("+", end="")
+        else:
+            print(" ", end="")
+    print()
+print()
+
+28.
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if i == j or i + j == n - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+print()
+
+29.
+for i in range(7):
+    if i == 0 or i == 3 or i == 6:
+        print("*")
+    else:
+        print("* *")
+print()
