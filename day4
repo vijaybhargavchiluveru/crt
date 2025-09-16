@@ -1,0 +1,127 @@
+1.
+n=int(input())
+sum=0
+while(n>=10):
+    r=n%100
+    n=n//10
+    sum+=r
+print(sum)		O/P: sum of two digits 
+
+2.
+n=int(input())
+sum=1
+while(n!=0):
+    r=n%10
+    n=n//10
+    sum*=r
+print(sum)		O/P: mul of digits of given number
+
+
+3.
+n=int(input())
+sum=0
+for i in range(n,0,-1):
+    sum+=i
+print(sum)		
+    
+4.
+n=int(input())
+mul=1
+for i in range(n,0,-1):
+    mul*=i
+print(mul)
+
+5.
+n=int(input())
+g=int(input())
+d=int(input())
+p=0
+b=0
+while(n!=0):
+    r=n%d
+    n=n//d
+    b+=(r*(g**p))
+    p+=1
+print(b)
+
+6.import math
+n=int(input())
+g = int(input())
+d = int(input())
+z=int(math.log10(n))+1
+count=0
+c=0
+t=n
+a=0
+while(t!=0):
+    e = t%10
+    t = t//10
+    if(g>e):
+        count+=1
+if(count==z):
+    while(n>0):
+        q = n%d
+        n= n//d
+        a += (q*(g**c))
+        c+=1
+    print(a)
+else:
+    print("Invalid")
+
+7.
+n = int(input())
+b = n
+a = 0
+while(b!=0):
+    p = b%10
+    if(a<p):
+        a=p
+    q = b//10
+    b=q
+d=a
+c=0
+p=0
+q=0
+a=n
+tot=0
+rev=0
+while(n!=0):
+    r=n%10
+    n=n//10
+    rev=rev*10+r
+while(rev>0):
+        p = rev//d
+        q = rev%d
+        tot += (q*(10**c))
+        c+=1
+        rev=p
+print(tot)
+
+8
+
+9.
+n=int(input())
+s=0
+while(n>=10):
+    r=n%100
+    a=r
+    rev=0
+    while(a!=0):
+        b=a%10
+        a=a//10
+        rev=rev*10+b
+    s+=rev
+    n=n//10
+print(s)
+    
+10.n=int(input())
+s=0
+while(n!=0):
+    r=n%10
+    if(r%2!=0):
+        fac=1    
+        for i in range(r,0,-1):
+            fac*=i
+        s+=fac
+    n=n//10
+print(s)
